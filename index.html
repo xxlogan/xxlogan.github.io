@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-python-django" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/23/python-django/" class="article-date">
+  <time datetime="2020-07-23T05:36:12.000Z" itemprop="datePublished">2020-07-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/23/python-django/">python-django</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><ol>
+<li>python环境</li>
+<li>anaconda 环境   减少第三方包安装</li>
+<li>django环境 <ol>
+<li>使用pip -i 参数加国内源，可以加快安装速度</li>
+</ol>
+</li>
+</ol>
+<h3 id="Django-基础命令"><a href="#Django-基础命令" class="headerlink" title="Django 基础命令"></a>Django 基础命令</h3><ol>
+<li>startproject 启动项目</li>
+<li>startapp 启用应用</li>
+<li>check 校验项目完整性</li>
+<li>runserver 进入django环境 并运行本地django项目</li>
+<li>shell 进入djangoshell</li>
+<li>test 跑一些测试用例</li>
+<li>makeigrations 创建模型变更的迁移文件</li>
+<li>migrate 执行上一个命令创建的迁移文件</li>
+</ol>
+<h3 id="Django-项目目录介绍"><a href="#Django-项目目录介绍" class="headerlink" title="Django 项目目录介绍"></a>Django 项目目录介绍</h3><ol>
+<li>项目配置文件：settings.py</li>
+<li>项目路由配置文件：urls.py</li>
+<li>项目管理文件：manage.py</li>
+</ol>
+<h3 id="Django应用目录介绍"><a href="#Django应用目录介绍" class="headerlink" title="Django应用目录介绍"></a>Django应用目录介绍</h3><ol>
+<li><p>views.py 视图处理的地方</p>
+</li>
+<li><p>models.py 定义应用模型的地方</p>
+</li>
+<li><p>admin.py 定义admin模块管理对象的地方</p>
+</li>
+<li><p>apps.py 声明应用的地方</p>
+</li>
+<li><p>tests.py 编写应用测试用例的地方</p>
+</li>
+<li><p>urls.pu 管理路由的地方 需要自行创建</p>
+</li>
+</ol>
+<h3 id="Django视图"><a href="#Django视图" class="headerlink" title="Django视图"></a>Django视图</h3><ol>
+<li>通过函数实现网页的内容</li>
+</ol>
+<h3 id="Django路由"><a href="#Django路由" class="headerlink" title="Django路由"></a>Django路由</h3><ol>
+<li>请求无法达到刚才的视图函数</li>
+<li>通过配置路由绑定视图函数和URL</li>
+</ol>
+<p>调用顺序</p>
+<ol>
+<li>通过在views中编写的模块函数</li>
+<li>然后再应用的urls文件中编写应用路由，指向我们编写的模块函数</li>
+<li>再修改项目路由中的urls文件，设置路由，到应用路由中寻找指定模块函数</li>
+<li>就会显示我们设置的网页了</li>
+</ol>
+<h3 id="Django模型"><a href="#Django模型" class="headerlink" title="Django模型"></a>Django模型</h3><ol>
+<li><p>模型层简介</p>
+<ol>
+<li><p>模型层是什么</p>
+<p>从数据库取出数据进行页面展示，结合视图和数据进行开发。</p>
+<p>模型层位于Django视图层和数据库之间 ，将python对象和数据库表之间转换</p>
+<p><img src="C:%5CUsers%5CMephisto%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200718203803228.png" alt="image-20200718203803228"></p>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="2">
+<li><p>为什么需要模型层</p>
+<ol>
+<li>模型层可以屏蔽不同数据库之间的差异，使开发者可以专注于业务逻辑开发</li>
+<li>提供更多的便捷工具有助于开发</li>
+</ol>
+</li>
+<li><p>模型层相关配置</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>创建博客文章模型</p>
+<ol>
+<li>设计博客模型<ol>
+<li>文章标题 文本类型</li>
+<li>文章摘要 文本类型</li>
+<li>文章内容 文本类型</li>
+<li>唯一ID标记  int数字类型（自增，主键）</li>
+<li>发布日期 日期类型</li>
+</ol>
+</li>
+<li>模型层定义字段<ol>
+<li>数字类型：integerfield</li>
+<li>文本类型：textfield</li>
+<li>日期类型：datetimefield</li>
+<li>自增id： AutoField</li>
+<li>主键定义：primary_key属性</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>初识Django shell</p>
+<ol>
+<li>什么是Django shell<ol>
+<li>python shell ，用于交互式的python编程</li>
+<li>Django shell 也类似，继承Django项目环境</li>
+</ol>
+</li>
+<li>为什么需要Djangoshell<ol>
+<li>临时性操作使用Django shell 更加方便</li>
+<li>小范围Debug更简单，不需要运行整个项目</li>
+</ol>
+</li>
+<li>Django shell 使用<ol>
+<li>python manage.py shell</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>初识Django Admin模块</p>
+<ol>
+<li>Django Admin模块是什么<ol>
+<li>Django模块的后台管理工具，不需要用户开发</li>
+<li>读取定义的模型元数据，提供强大的管理使用页面</li>
+</ol>
+</li>
+<li>为什么需要使用Django Admin模块<ol>
+<li>Django shell 新增文章太复杂了</li>
+<li>管理页面时基础设施中重要的部分</li>
+<li>管理页面功能：认证用户、显示管理模块、校验输入等功能</li>
+</ol>
+</li>
+<li>Django Admin模块使用<ol>
+<li>创建管理员用户<ol>
+<li>python manage.py createsuperuser</li>
+</ol>
+</li>
+<li>登陆页面进行管理</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>实现博客数据返回页面</p>
+</li>
+</ol>
+<h3 id="Django视图与模板"><a href="#Django视图与模板" class="headerlink" title="Django视图与模板"></a>Django视图与模板</h3><ol>
+<li>使用Bootstrap实现静态博客页面<ol>
+<li>页面布局设计<ol>
+<li>博客首页</li>
+<li>文章详情页</li>
+</ol>
+</li>
+<li>Bootstrap以及Bootstrap的栅格系统<ol>
+<li>Bootstrap来自美国Twitter的前端框架</li>
+<li>提供非常多的空间并附带源码</li>
+<li>栅格系统会将页面从左到右分为12等份</li>
+</ol>
+</li>
+<li>实现静态页面</li>
+</ol>
+</li>
+<li>初识Django的模板系统<ol>
+<li>为什么要使用模板系统<ol>
+<li>视图文件不适合编码HTML</li>
+<li>页面设计改变需要修改python代码</li>
+<li>网页逻辑和网页视图应该分开设计</li>
+</ol>
+</li>
+<li>模板系统简介<ol>
+<li>模板系统的表现形式是文本， html文件</li>
+<li>分离文档的表现形式和表现内容</li>
+<li>模板系统定义了特有的标签占位符</li>
+</ol>
+</li>
+<li>基本语法<ol>
+<li>变量标签  </li>
+<li>for循环标签：<ol>
+<li><img src="C:%5CUsers%5CMephisto%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200723133958648.png" alt="image-20200723133958648"></li>
+</ol>
+</li>
+<li>if-else分支标签：<ol>
+<li><img src="C:%5CUsers%5CMephisto%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200723134017474.png" alt="image-20200723134017474"></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>使用模板系统渲染博客页面</li>
+<li>实现文章详情页面跳转</li>
+<li>实现上下篇文章跳转</li>
+<li>实现分页功能</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/23/python-django/" data-id="ckcyd5tp10001x8vx3yzn9x3w" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python-Django/" rel="tag">python Django</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/23/hello-world-1/" class="article-date">
+  <time datetime="2020-07-23T05:33:29.000Z" itemprop="datePublished">2020-07-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/23/hello-world-1/">hello world</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/23/hello-world-1/" data-id="ckcyd5top0000x8vx819r9pja" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/23/hello-world/" class="article-date">
+  <time datetime="2020-07-23T05:09:38.293Z" itemprop="datePublished">2020-07-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/23/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/23/hello-world/" data-id="ckcycgq4r0000dwvx9lco6z3t" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/python-Django/" rel="tag">python Django</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/python-Django/" style="font-size: 10px;">python Django</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/23/python-django/">python-django</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/23/hello-world-1/">hello world</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/23/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
