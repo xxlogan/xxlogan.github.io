@@ -299,148 +299,20 @@
 
       
         
-          
-            <h2 id="PHP-入门"><a href="#PHP-入门" class="headerlink" title="PHP 入门"></a>PHP 入门</h2><h3 id="1-1-PHP可以做什么"><a href="#1-1-PHP可以做什么" class="headerlink" title="1-1 PHP可以做什么"></a>1-1 PHP可以做什么</h3><p>​    JS是前段语言，通常运行在<strong>浏览器（客户端）</strong>，它可以制作网页上面的特效：鼠标滑过背景改变颜色，还有网页上常见的鼠标滑过弹出菜单。但如果要让JavaScript实现显示“访问网站的总人数”，它就无能为力了。</p>
+          <h2 id="PHP-入门"><a href="#PHP-入门" class="headerlink" title="PHP 入门"></a>PHP 入门</h2><h3 id="1-1-PHP可以做什么"><a href="#1-1-PHP可以做什么" class="headerlink" title="1-1 PHP可以做什么"></a>1-1 PHP可以做什么</h3><p>​    JS是前段语言，通常运行在<strong>浏览器（客户端）</strong>，它可以制作网页上面的特效：鼠标滑过背景改变颜色，还有网页上常见的鼠标滑过弹出菜单。但如果要让JavaScript实现显示“访问网站的总人数”，它就无能为力了。</p>
 <p>​    PHP是后端语言，其特点如下：</p>
 <ol>
 <li><strong>运行在服务器端</strong>：学会了PHP，就可以指挥服务器给你干活，甚至是搞破坏，WEB网站的大部分数据都是存储在服务器端的，PHP就是用来处理这些存储在服务器的数据的</li>
 <li><strong>跨平台</strong>：服务器可以是多种平台的服务器，比如Linux、Windows、Unix</li>
 <li><strong>脚本语言</strong>：它是通过<strong>编写脚本</strong>，也就是一行行的计算机指令（也可以理解为特定的英文单词），来指挥服务器来工作的</li>
 </ol>
-<p>实例：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">   <span class="keyword">echo</span> <span class="string">"php hello world"</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-认识PHP代码标识"><a href="#1-2-认识PHP代码标识" class="headerlink" title="1-2 认识PHP代码标识"></a>1-2 认识PHP代码标识</h3><p>​    JS代码是放在<code>&lt;script&gt;</code>和<code>&lt;/script&gt;</code>标签之间一样</p>
-<p>​    PHP代码存放在<code>&lt;/php</code> 和<code>?&gt;</code>之间</p>
-<h3 id="1-3-PHP-Echo语句"><a href="#1-3-PHP-Echo语句" class="headerlink" title="1-3 PHP Echo语句"></a>1-3 PHP Echo语句</h3><p>​    echo是PHP中的输出语句，可以把字符串输出（字符串用双引号括起来）。</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="keyword">echo</span> <span class="string">"Hello world!"</span>;<span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-4-PHP-计算表达式"><a href="#1-4-PHP-计算表达式" class="headerlink" title="1-4 PHP-计算表达式"></a>1-4 PHP-计算表达式</h3><p>​    不同于HTML和CSS，在php中我们可以做计算，比如我们写入<code>echo 12*3</code>计算机会计算出结果<code>36</code>。如下代码：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="keyword">echo</span> <span class="number">12</span>*<span class="number">3</span>;<span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-5-PHP-字符串"><a href="#1-5-PHP-字符串" class="headerlink" title="1-5 PHP-字符串"></a>1-5 PHP-字符串</h3><p>​    一个<strong>字符串</strong>是用<strong>双引号</strong>括起来的一个词或一个句字，比如：“hello xxlogan”</p>
-<p>​    使用 . 可以连接两个字符串</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="keyword">echo</span> <span class="string">"Hi,imooc！"</span>;<span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>​    也可使用单引号括起来</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="keyword">echo</span> <span class="string">'Hi,imooc！'</span>;<span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>​    可以将两个字符串用连接符 <strong>.</strong> 连接起来</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="keyword">echo</span> <span class="string">'Hi,'</span>.<span class="string">'imooc!'</span>;<span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-6-PHP语句结束符"><a href="#1-6-PHP语句结束符" class="headerlink" title="1-6 PHP语句结束符"></a>1-6 PHP语句结束符</h3><p>​    在每一条PHP代码行结尾处都会有一个分号<code>；</code></p>
-<h3 id="1-7-注释"><a href="#1-7-注释" class="headerlink" title="1-7 注释"></a>1-7 注释</h3><p>​    在PHP中也有注释语句：用双斜杠（//）来表示。其它语言中，Html中使用<!--注释语句-->，CSS中使用/<em>注释语句</em>/。如下面代码：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">//输出hi,imooc!</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">"hi,imooc!"</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="WAMPServer集成环境下载和安装"><a href="#WAMPServer集成环境下载和安装" class="headerlink" title="WAMPServer集成环境下载和安装"></a>WAMPServer集成环境下载和安装</h2><h3 id="2-1-WAMPServer集成环境下载和安装"><a href="#2-1-WAMPServer集成环境下载和安装" class="headerlink" title="2-1 WAMPServer集成环境下载和安装"></a>2-1 WAMPServer集成环境下载和安装</h3><ol>
-<li>w ：windows</li>
-<li>A ：Apache</li>
-<li>M： MySQL</li>
-<li>P : PHP</li>
-</ol>
-<p>手动安装</p>
-<h2 id="PHP-变量"><a href="#PHP-变量" class="headerlink" title="PHP 变量"></a>PHP 变量</h2><h3 id="3-1-PHP-什么是变量"><a href="#3-1-PHP-什么是变量" class="headerlink" title="3-1 PHP 什么是变量"></a>3-1 PHP 什么是变量</h3><p>​    变量是用于存储值的，我们命令服务器去干活的时候，往往需要产生一些数据，需要临时性存放起来，方便取用。</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $var = <span class="string">"大家来学PHP"</span>;</span><br><span class="line">    <span class="keyword">echo</span> $var;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line">	$var = <span class="string">"学PHP上慕课网"</span>;</span><br><span class="line">	<span class="keyword">echo</span> $var;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="3-2-PHP-如何定义变量"><a href="#3-2-PHP-如何定义变量" class="headerlink" title="3-2 PHP 如何定义变量"></a>3-2 PHP 如何定义变量</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$var_name = “苹果”;</span><br><span class="line">$n = <span class="number">10</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>解释一下，在“=”左边是<strong>变量名</strong>，右边是<strong>变量值</strong>，完成定义变量后，需要一个<code>；</code>告诉服务器这行指令已经结束</li>
-<li>变量名必须通过<code>$</code>符号标识</li>
-<li>在PHP中，<code>=</code>是<strong>赋值运算符</strong></li>
-</ol>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">$var_name = <span class="string">"苹果"</span>;</span><br><span class="line">$n=<span class="number">10</span>;</span><br><span class="line">var_dump($var_name);</span><br><span class="line">var_dump($n);</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"><span class="comment">//string(6) "苹果"</span></span><br><span class="line"><span class="comment">//int(10)</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="3-3-PHP-变量名的命名规则"><a href="#3-3-PHP-变量名的命名规则" class="headerlink" title="3-3 PHP 变量名的命名规则"></a>3-3 PHP 变量名的命名规则</h3><ol>
-<li>变量名必须以<strong>字母</strong>或<strong>下划线</strong> “<strong>_</strong>”开头</li>
-<li>变量名只能由字母、数字、以及“<strong>_</strong>”组成，还能包含汉字</li>
-<li>变量名不允许包含空格</li>
-<li>PHP中变量名是<strong>区分大小写</strong>的，如“$my_book”与“$my_Book”代表两个不同的变量</li>
-</ol>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    $my_book = <span class="string">"我的小写的book"</span>;</span><br><span class="line">    $my_BOOK = <span class="string">"我的大写的BOOK"</span>;</span><br><span class="line">	<span class="keyword">echo</span> $my_book;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line">	<span class="keyword">echo</span> $my_BOOK;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line">	$my_book = <span class="string">"这次奇迹要发生啦"</span>;</span><br><span class="line">	<span class="keyword">echo</span> $my_book;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-4-PHP-什么是变量的数据类型"><a href="#3-4-PHP-什么是变量的数据类型" class="headerlink" title="3-4 PHP 什么是变量的数据类型"></a>3-4 PHP 什么是变量的数据类型</h3><p>​    在变量中，由于变量占用的空间单元不一样（占的地盘大小不一样），也分成几种数据类型。</p>
-<p>​    可以通过使用“memory_get_usage”获取当前PHP消耗的内存。</p>
-<p>​    整型和浮点型消耗的内存相同</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="keyword">echo</span> $m1 = memory_get_usage(); </span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"> $var_string=<span class="string">"123"</span>;</span><br><span class="line"><span class="keyword">echo</span> $m2 = memory_get_usage()-$m1; </span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"> $n=<span class="number">123</span>;</span><br><span class="line"><span class="keyword">echo</span> $m3 = memory_get_usage()-$m1-$m2; </span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"> $f=<span class="number">123.00</span>;</span><br><span class="line"><span class="keyword">echo</span> $m4 = memory_get_usage()-$m1-$m2-$m3; </span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"> $var_array = <span class="keyword">array</span>(<span class="string">"123"</span>);</span><br><span class="line"><span class="keyword">echo</span> $m5 = memory_get_usage()-$m1-$m2-$m3-$m4; </span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"><span class="comment">//运行结果：</span></span><br><span class="line"><span class="number">625240</span></span><br><span class="line"><span class="number">360</span></span><br><span class="line"><span class="number">288</span></span><br><span class="line"><span class="number">288</span></span><br><span class="line"><span class="number">632</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-5-PHP变量的数据类型"><a href="#3-5-PHP变量的数据类型" class="headerlink" title="3-5 PHP变量的数据类型"></a>3-5 PHP变量的数据类型</h3><p>​    在PHP中，支持8种原始类型，其中包括四种标量类型、两种复合类型和两种特殊类型</p>
-<p>​    PHP是一门松散类型的语言，不必向PHP声明变量的数据类型，PHP会自动把变量转换为自动的数据类型</p>
-<h3 id="3-6-PHP标量类型—布尔类型"><a href="#3-6-PHP标量类型—布尔类型" class="headerlink" title="3-6 PHP标量类型—布尔类型"></a>3-6 PHP标量类型—布尔类型</h3><p>​    布尔类型（boolean）：只有两个值，一个是TRUE，另一个FALSE</p>
-<p>​    它<strong>不区分大小写</strong>，也就是说”TRUE”和“true”效果是一样的</p>
-<p>​    当我们用”echo”指令输出布尔类型时，如果是“true”则输出的是“1”，“false”则什么也不输出</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">	$man = <span class="string">"男"</span>;</span><br><span class="line">	$flag = $man==<span class="string">"男"</span>;</span><br><span class="line">	<span class="keyword">echo</span> $flag ;</span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span> ;</span><br><span class="line">	var_dump($flag);</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line">bool(<span class="keyword">true</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-7-PHP标量类型—整型"><a href="#3-7-PHP标量类型—整型" class="headerlink" title="3-7 PHP标量类型—整型"></a>3-7 PHP标量类型—整型</h3><p>​    整型（integer）：类似于常见的整数。它可以用十进制、八进制、十六进制指定</p>
-<ol>
-<li>十进制就是日常使用的数字</li>
-<li>八进制，数字前必须加上“0”    04</li>
-<li>十六进制，数字前必须加“0x”  0x4</li>
-</ol>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$data_int = <span class="number">1234</span>;   <span class="comment">// 十进制数 </span></span><br><span class="line">$data_int = <span class="number">-567</span>;    <span class="comment">// 一个负数</span></span><br><span class="line">$data_int = <span class="number">0123</span>;    <span class="comment">// 八进制数（等于十进制的 83）</span></span><br><span class="line">$data_int = <span class="number">0x1a</span>;    <span class="comment">// 十六进制数（等于十进制的 26）</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-8-PHP标量类型—浮点型"><a href="#3-8-PHP标量类型—浮点型" class="headerlink" title="3-8 PHP标量类型—浮点型"></a>3-8 PHP标量类型—浮点型</h3><p>浮点型（浮点数、双精度数或实数），也就是通常说的小数，可以用小数点或者科学计数法表示</p>
-<p>科学计数法可以使用小写的e，也可以使用大写的E</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$num_float = <span class="number">1.234</span>;    <span class="comment">//小数点  </span></span><br><span class="line">$num_float = <span class="number">1.2e3</span>;    <span class="comment">//科学计数法，小写e  </span></span><br><span class="line">$num_float = <span class="number">7.0E-10</span>;     <span class="comment">//科学计数法，大写E  </span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-9-PHP标量类型—字符串1"><a href="#3-9-PHP标量类型—字符串1" class="headerlink" title="3-9 PHP标量类型—字符串1"></a>3-9 PHP标量类型—字符串1</h3><p>​    字符串是由一系列字符组成，在PHP中，字符和字节一样，也就是说，一共有256种不同字符的可能性</p>
-<p>​    字符串型可以用三种方法定义：<strong>单引号形式</strong>、<strong>双引号形式</strong>和<strong>Heredoc结构形式</strong></p>
-<h3 id="3-10-PHP标量类型—字符串（2）"><a href="#3-10-PHP标量类型—字符串（2）" class="headerlink" title="3-10 PHP标量类型—字符串（2）"></a>3-10 PHP标量类型—字符串（2）</h3><p>​    当你的字符串中包含引号的时候</p>
-<p><img src="https://xxlogan.oss-cn-beijing.aliyuncs.com/img/5339412f00015a9c07410244.jpg" alt="引号中包含引号"></p>
-<ol>
-<li>第一种方案：在单引号中嵌入双引号，如上图第2行所示；</li>
-<li>第二种方案：在双引号中嵌入单引号，如上图第3行所示；</li>
-<li>第三种方案：使用转义符“\”(后面部分还有介绍)，分别如上图第4行和第5行所示</li>
-<li><strong>相同引号</strong>中插入<strong>相同引号</strong>，需要用\进行转义</li>
-</ol>
-<h3 id="3-11-PHP标量类型—字符串（3）"><a href="#3-11-PHP标量类型—字符串（3）" class="headerlink" title="3-11 PHP标量类型—字符串（3）"></a>3-11 PHP标量类型—字符串（3）</h3><p><img src="https://xxlogan.oss-cn-beijing.aliyuncs.com/img/533943f0000186f906790213.jpg" alt="引号中有$符号"></p>
-<ol>
-<li><p>当双引号中包含变量时，变量会与双引号中的内容连接在一起；</p>
-</li>
-<li><p>当单引号中包含变量时，变量会被当做字符串输出。</p>
-</li>
-</ol>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">$love = <span class="string">"I love you!"</span>; </span><br><span class="line">$string1 = <span class="string">"慕课网,$love"</span>;</span><br><span class="line">$string2 = <span class="string">'慕课网,$love'</span>;</span><br><span class="line"><span class="keyword">echo</span> $string1;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> $string2;</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">慕课网,I love you!</span><br><span class="line">慕课网,$love</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-12-PHP标量类型—字符串（4）"><a href="#3-12-PHP标量类型—字符串（4）" class="headerlink" title="3-12 PHP标量类型—字符串（4）"></a>3-12 PHP标量类型—字符串（4）</h3><p>​    <strong>当字符串很长怎么办？</strong></p>
-<p>​    我们可以使用<strong>Heredoc结构形式</strong>的方法来解决该问题，首先使用定界符表示字符串（&lt;&lt;&lt;），接着在“&lt;&lt;&lt;“之后提供一个标识符<strong>GOD</strong>，然后是字符串，最后以提供的这个标识符结束字符串.</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">$string1 = <span class="string">&lt;&lt;&lt;GOD</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">我有一只小毛驴，我从来也不骑。</span></span><br><span class="line"><span class="string">有一天我心血来潮，骑着去赶集。</span></span><br><span class="line"><span class="string">我手里拿着小皮鞭，我心里正得意。</span></span><br><span class="line"><span class="string">不知怎么哗啦啦啦啦，我摔了一身泥.</span></span><br><span class="line"><span class="string">GOD;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> $string1;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-13-PHP第一种特殊类型—资源"><a href="#3-13-PHP第一种特殊类型—资源" class="headerlink" title="3-13 PHP第一种特殊类型—资源"></a>3-13 PHP第一种特殊类型—资源</h3><p>​    资源（resource）：资源是由专门的函数来建立和使用的，例如打开文件、数据连接、图形画布。我们可以对资源进行操作（创建、使用和释放）。任何资源，在不需要的时候应该被及时释放。如果我们忘记了释放资源，系统自动启用垃圾回收机制，在页面执行完毕后回收资源，以避免内存被消耗殆尽。</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$file=fopen(<span class="string">"f.txt"</span>,<span class="string">"r"</span>);   <span class="comment">//打开文件</span></span><br><span class="line">$con=mysql_connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"root"</span>);  <span class="comment">//连接数据库</span></span><br><span class="line">$img=imagecreate(<span class="number">100</span>,<span class="number">100</span>);<span class="comment">//图形画布</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>​    <strong>注意</strong>：f.txt文本文件保存时一定要设置为UTF-8格式，避免出现乱码。</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"><span class="comment">//首先采用“fopen”函数打开文件，得到返回值的就是资源类型。</span></span><br><span class="line">$file_handle = fopen(<span class="string">"/data/webroot/resource/php/f.txt"</span>,<span class="string">"r"</span>);</span><br><span class="line"><span class="keyword">if</span> ($file_handle)&#123;</span><br><span class="line">    <span class="comment">//接着采用while循环（后面语言结构语句中的循环结构会详细介绍）一行行地读取文件，然后输出每行的文字</span></span><br><span class="line">    <span class="keyword">while</span> (!feof($file_handle)) &#123; <span class="comment">//判断是否到最后一行</span></span><br><span class="line">        $line = fgets($file_handle); <span class="comment">//读取一行文本</span></span><br><span class="line">        <span class="keyword">echo</span> $line; <span class="comment">//输出一行文本</span></span><br><span class="line">        <span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>; <span class="comment">//换行</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">fclose($file_handle);<span class="comment">//关闭文件</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3-14-PHP第二种特殊类型—空类型"><a href="#3-14-PHP第二种特殊类型—空类型" class="headerlink" title="3-14 PHP第二种特殊类型—空类型"></a>3-14 PHP第二种特殊类型—空类型</h3><p>​    NULL（NULL）：NULL是空类型，对大小写不敏感，NULL类型只有一个取值，表示一个变量没有值，当被赋值为NULL，或者尚未被赋值，或者被unset()，这三种情况下变量被认为为NULL。</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line"> error_reporting(<span class="number">0</span>); <span class="comment">//禁止显示PHP警告提示</span></span><br><span class="line"> $var;</span><br><span class="line"> var_dump($var);</span><br><span class="line"> $var1 = <span class="keyword">null</span>;</span><br><span class="line"> var_dump($var1);</span><br><span class="line"> $var = <span class="keyword">NULL</span>;</span><br><span class="line"> var_dump( $var2);</span><br><span class="line"> $var3 = <span class="string">"节日快乐！"</span>;</span><br><span class="line"> <span class="keyword">unset</span>($var3);</span><br><span class="line"> var_dump($var3);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><h3 id="4-1-PHP-什么是常量"><a href="#4-1-PHP-什么是常量" class="headerlink" title="4-1 PHP 什么是常量"></a>4-1 PHP 什么是常量</h3><p>​    常量可以理解为值不变的量（如圆周率）</p>
-<p>​    常量值被定义后，<strong>在脚本的其他任何地方都不可以被改变</strong></p>
-<p>​    PHP中的常量分为<strong>自定义常量</strong>和<strong>系统常量</strong></p>
-<p>​    通过使用PHP中的函数<strong>define()</strong>定义</p>
-<p>define()函数的语法格式为：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bool define(string $constant_name, mixed $value[, $case_sensitive = <span class="keyword">true</span>])</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>constant_name”为必选参数，常量名称,即标志符，常量的命名规则与变量的一致,不带 $ 符号</li>
-<li>“value”为必选参数，它是常量的值</li>
-<li>“case_sensitive”为可选参数，指定是否大小写敏感，设定为true表示不敏感</li>
-</ol>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$p = <span class="string">"PII"</span>;</span><br><span class="line">define(<span class="string">"PI"</span>,<span class="number">3.14</span>);</span><br><span class="line">define($p,<span class="number">3.14</span>); <span class="comment">//通过变量传递参数</span></span><br><span class="line"><span class="keyword">echo</span> PI;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> PII;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4-3-PHP-认识系统变量"><a href="#4-3-PHP-认识系统变量" class="headerlink" title="4-3 PHP 认识系统变量"></a>4-3 PHP 认识系统变量</h3><p>​    系统常量是PHP已经定义好的常量，可以直接拿来使用，常见的系统常量有：</p>
-<p><img src="https://xxlogan.oss-cn-beijing.aliyuncs.com/img/QQ%E6%88%AA%E5%9B%BE20200725193410.png" alt="常见的系统变量"></p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">echo</span> <span class="keyword">__FILE__</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="keyword">__LINE__</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> PHP_VERSION;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> PHP_OS;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;br /&gt;"</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">index.php</span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">5.3</span><span class="number">.29</span></span><br><span class="line">Linux</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-4-PHP-常量如何取值"><a href="#4-4-PHP-常量如何取值" class="headerlink" title="4-4 PHP 常量如何取值"></a>4-4 PHP 常量如何取值</h3>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/07/25/PHP%E5%85%A5%E9%97%A8/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -557,8 +429,7 @@
 
       
         
-          
-            <h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><ol>
+          <h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><ol>
 <li>python环境</li>
 <li>anaconda 环境   减少第三方包安装</li>
 <li>django环境 <ol>
@@ -566,181 +437,13 @@
 </ol>
 </li>
 </ol>
-<h3 id="Django-基础命令"><a href="#Django-基础命令" class="headerlink" title="Django 基础命令"></a>Django 基础命令</h3><ol>
-<li>startproject 启动项目</li>
-<li>startapp 启用应用</li>
-<li>check 校验项目完整性</li>
-<li>runserver 进入django环境 并运行本地django项目</li>
-<li>shell 进入djangoshell</li>
-<li>test 跑一些测试用例</li>
-<li>makeigrations 创建模型变更的迁移文件</li>
-<li>migrate 执行上一个命令创建的迁移文件</li>
-</ol>
-<h3 id="Django-项目目录介绍"><a href="#Django-项目目录介绍" class="headerlink" title="Django 项目目录介绍"></a>Django 项目目录介绍</h3><ol>
-<li>项目配置文件：settings.py</li>
-<li>项目路由配置文件：urls.py</li>
-<li>项目管理文件：manage.py</li>
-</ol>
-<h3 id="Django应用目录介绍"><a href="#Django应用目录介绍" class="headerlink" title="Django应用目录介绍"></a>Django应用目录介绍</h3><ol>
-<li><p>views.py 视图处理的地方</p>
-</li>
-<li><p>models.py 定义应用模型的地方</p>
-</li>
-<li><p>admin.py 定义admin模块管理对象的地方</p>
-</li>
-<li><p>apps.py 声明应用的地方</p>
-</li>
-<li><p>tests.py 编写应用测试用例的地方</p>
-</li>
-<li><p>urls.pu 管理路由的地方 需要自行创建</p>
-</li>
-</ol>
-<h3 id="Django视图"><a href="#Django视图" class="headerlink" title="Django视图"></a>Django视图</h3><ol>
-<li>通过函数实现网页的内容</li>
-</ol>
-<h3 id="Django路由"><a href="#Django路由" class="headerlink" title="Django路由"></a>Django路由</h3><ol>
-<li>请求无法达到刚才的视图函数</li>
-<li>通过配置路由绑定视图函数和URL</li>
-</ol>
-<p>调用顺序</p>
-<ol>
-<li>通过在views中编写的模块函数</li>
-<li>然后再应用的urls文件中编写应用路由，指向我们编写的模块函数</li>
-<li>再修改项目路由中的urls文件，设置路由，到应用路由中寻找指定模块函数</li>
-<li>就会显示我们设置的网页了</li>
-</ol>
-<h3 id="Django模型"><a href="#Django模型" class="headerlink" title="Django模型"></a>Django模型</h3><ol>
-<li><p>模型层简介</p>
-<ol>
-<li><p>模型层是什么</p>
-<p>从数据库取出数据进行页面展示，结合视图和数据进行开发。</p>
-<p>模型层位于Django视图层和数据库之间 ，将python对象和数据库表之间转换</p>
-<p><img src="https://xxlogan.oss-cn-beijing.aliyuncs.com/img/image-20200718203803228.png" alt="1"></p>
-</li>
-<li><p>为什么需要模型层</p>
-<ol>
-<li>模型层可以屏蔽不同数据库之间的差异，使开发者可以专注于业务逻辑开发</li>
-</ol>
-</li>
-<li><p>提供更多的便捷工具有助于开发</p>
-</li>
-<li><p>模型层相关配置</p>
-</li>
-</ol>
-</li>
-<li><p>创建博客文章模型</p>
-<ol>
-<li>设计博客模型<ol>
-<li>文章标题 文本类型</li>
-<li>文章摘要 文本类型</li>
-<li>文章内容 文本类型</li>
-<li>唯一ID标记  int数字类型（自增，主键）</li>
-<li>发布日期 日期类型</li>
-</ol>
-</li>
-<li>模型层定义字段<ol>
-<li>数字类型：integerfield</li>
-<li>文本类型：textfield</li>
-<li>日期类型：datetimefield</li>
-<li>自增id： AutoField</li>
-<li>主键定义：primary_key属性</li>
-</ol>
-</li>
-</ol>
-</li>
-<li><p>初识Django shell</p>
-<ol>
-<li>什么是Django shell<ol>
-<li>python shell ，用于交互式的python编程</li>
-<li>Django shell 也类似，继承Django项目环境</li>
-</ol>
-</li>
-<li>为什么需要Djangoshell<ol>
-<li>临时性操作使用Django shell 更加方便</li>
-<li>小范围Debug更简单，不需要运行整个项目</li>
-</ol>
-</li>
-<li>Django shell 使用<ol>
-<li>python manage.py shell</li>
-</ol>
-</li>
-</ol>
-</li>
-<li><p>初识Django Admin模块</p>
-<ol>
-<li>Django Admin模块是什么<ol>
-<li>Django模块的后台管理工具，不需要用户开发</li>
-<li>读取定义的模型元数据，提供强大的管理使用页面</li>
-</ol>
-</li>
-<li>为什么需要使用Django Admin模块<ol>
-<li>Django shell 新增文章太复杂了</li>
-<li>管理页面时基础设施中重要的部分</li>
-<li>管理页面功能：认证用户、显示管理模块、校验输入等功能</li>
-</ol>
-</li>
-<li>Django Admin模块使用<ol>
-<li>创建管理员用户<ol>
-<li>python manage.py createsuperuser</li>
-</ol>
-</li>
-<li>登陆页面进行管理</li>
-</ol>
-</li>
-</ol>
-</li>
-<li><p>实现博客数据返回页面</p>
-</li>
-</ol>
-<h3 id="Django视图与模板"><a href="#Django视图与模板" class="headerlink" title="Django视图与模板"></a>Django视图与模板</h3><ol>
-<li><p>使用Bootstrap实现静态博客页面</p>
-<ol>
-<li>页面布局设计<ol>
-<li>博客首页</li>
-<li>文章详情页</li>
-</ol>
-</li>
-<li>Bootstrap以及Bootstrap的栅格系统<ol>
-<li>Bootstrap来自美国Twitter的前端框架</li>
-<li>提供非常多的空间并附带源码</li>
-<li>栅格系统会将页面从左到右分为12等份</li>
-</ol>
-</li>
-<li>实现静态页面</li>
-</ol>
-</li>
-<li><p>初识Django的模板系统</p>
-<ol>
-<li><p>为什么要使用模板系统</p>
-<ol>
-<li>视图文件不适合编码HTML</li>
-<li>页面设计改变需要修改python代码</li>
-<li>网页逻辑和网页视图应该分开设计</li>
-</ol>
-</li>
-<li><p>模板系统简介</p>
-<ol>
-<li>模板系统的表现形式是文本， html文件</li>
-<li>分离文档的表现形式和表现内容</li>
-<li>模板系统定义了特有的标签占位符</li>
-</ol>
-</li>
-<li><p>基本语法</p>
-<p>​    <img src="https://xxlogan.oss-cn-beijing.aliyuncs.com/img/image-20200718203803229.png" alt="2"></p>
-</li>
-</ol>
-</li>
-<li><p>使用模板系统渲染博客页面</p>
-</li>
-<li><p>实现文章详情页面跳转</p>
-</li>
-<li><p>实现上下篇文章跳转</p>
-</li>
-<li><p>实现分页功能</p>
-</li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/07/23/python%20Django/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
